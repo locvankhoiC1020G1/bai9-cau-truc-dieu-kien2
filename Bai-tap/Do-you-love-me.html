@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+<h2> Do you love me</h2>
+<button id="co" onclick="dongy()">yes</button>
+<img src="tat.jpg" id="vomom" style="width: 200px" onmouseover="khong()">
+</body>
+<script>
+    function dongy() {
+        alert('hihi');
+    }
+    function khong() {
+        let a = document.getElementById('vomom');
+        a.style.left = parseInt(a.style.top) + 5 + 'px';
+    }
+
+    function init() {
+        imgObj = document.getElementById('vomom');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    window.onload = init;
+</script>
+</html>
